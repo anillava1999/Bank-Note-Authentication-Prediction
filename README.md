@@ -114,7 +114,7 @@ Running Project
 ## Future Scope
 
 * Optimize Streamlit app.py
-* Perform Sentimental analysis
+* Some Features want add
 * Front-End 
 
 
