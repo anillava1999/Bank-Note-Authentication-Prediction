@@ -6,12 +6,9 @@
   * Overview
   * Motivation
   * Data Collection
-  * Data Cleaning
-  * Vectorization(Bag of Words)
-  * Cosine Similarity
+  * Random Forest
   * Deployement on Heroku
   * Installation and Run 
-  * Database Link
   * Future scope of the project
  
 ## Linkdin Profile
@@ -79,13 +76,16 @@ Login or signup in order to create virtual app. You can either connect your gith
 ## Screenshots of Project
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 13 53 PM](https://user-images.githubusercontent.com/71332138/135763968-ad9547cf-8916-448b-b20b-798240d17f20.png)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Screenshot 2021-10-03 at 10 13 53 PM](https://user-images.githubusercontent.com/71332138/135763968-ad9547cf-8916-448b-b20b-798240d17f20.png)
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 15 10 PM](https://user-images.githubusercontent.com/71332138/135763970-1697a694-7f4b-4022-b614-96196e921c01.png)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Screenshot 2021-10-03 at 10 15 10 PM](https://user-images.githubusercontent.com/71332138/135763970-1697a694-7f4b-4022-b614-96196e921c01.png)
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 15 17 PM](https://user-images.githubusercontent.com/71332138/135763972-a4f11957-4a67-4001-a493-4ca563ca1f37.png)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+![Screenshot 2021-10-03 at 10 15 17 PM](https://user-images.githubusercontent.com/71332138/135763972-a4f11957-4a67-4001-a493-4ca563ca1f37.png)
 
 
 ## Installation and Run
@@ -106,8 +106,6 @@ Running Project
 ![blog sklearn](https://user-images.githubusercontent.com/71332138/134540412-a009eb7d-f4fa-412f-bc1a-a5c89ba74aa4.png). ![numpy](https://user-images.githubusercontent.com/71332138/134540645-95fa9566-18ca-4719-8cc6-82153e96683c.png) 
                                ![streamlit](https://user-images.githubusercontent.com/71332138/134540838-49dda9c6-3cf8-4695-be7b-5af1aff6e394.png)
 
-## Database Link : 
-[https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh/version/1?select=Test_set.xlsx]
 
 ## Deploy Heroku tutorial video link :
 
