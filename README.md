@@ -20,63 +20,41 @@ For any queries regarding about this project contact me
 Link : https://www.linkedin.com/in/anil-l-b023631b6/
 
 ## Demo
-Project output demo Link: [https://mrs-campusx.herokuapp.com]
+Project output demo Link: [ https://bank-note-app.herokuapp.com/ ]
 
 ## Overview
-Recommendation Engine created as an AI module integrated with mobile app to recommend movies with help of content, Developed these POC for to get experience real time projects and Created API using Streamlit Framework and Deployed to the Heroku Cloud platform
+Bank Note Authentication created as an AI module integrated with web app to predict the Note is Authenticate or NOT, Developed these POC for to get experience real time projects and Created API using Streamlit Framework and Deployed to the Heroku Cloud platform
 
 ## Motivation
 What to do when you are at home due to this pandemic situation? I started to learn Machine Learning model to get most out of it. I came to know mathematics behind all supervised models and unspurervised models. Finally it is important to work on application (real world application) to actually make a difference. To get a experience you have to work thats the reason to perform my favourable work done.
 
 
 ## Data Collection 
-Movie dataset Extracted the Dataset from the Kaggle you can also extract the data from this link https://www.kaggle.com/tmdb/tmdb-movie-metadata, Kaggle is an Open source and have a large community also they conduct competitions every month,Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges,Given the thousands of other people also doing them, it is becoming harder and harder for merely working through them to be enough to differentiate you. You'll learn a lot, but it won't make you stand out from your competition.Data scientists of all levels can benefit from the resources and community on Kaggle. Whether you are a beginner, looking to learn new skills and contribute to projects, an advanced data scientist looking for competitions, or somewhere in between, Kaggle is a good place to learn
+Movie dataset Extracted the Dataset from the Kaggle you can also extract the data from this link is given my main ipnyb file, Kaggle is an Open source and have a large community also they conduct competitions every month,Kaggle allows users to find and publish data sets, explore and build models in a web-based data-science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges,Given the thousands of other people also doing them, it is becoming harder and harder for merely working through them to be enough to differentiate you. You'll learn a lot, but it won't make you stand out from your competition.Data scientists of all levels can benefit from the resources and community on Kaggle. Whether you are a beginner, looking to learn new skills and contribute to projects, an advanced data scientist looking for competitions, or somewhere in between, Kaggle is a good place to learn
+
+## Random Forest(99% Accuracy)
+
+Introduction
+Random forest is a Supervised Machine Learning Algorithm that is used widely in Classification and Regression problems. It builds decision trees on different samples and takes their majority vote for classification and average in case of regression.
+
+One of the most important features of the Random Forest Algorithm is that it can handle the data set containing continuous variables as in the case of regression and categorical variables as in the case of classification. It performs better results for classification problems.
+
+Real Life Analogy
+Let’s dive into a real-life analogy to understand this concept further. A student named X wants to choose a course after his 10+2, and he is confused about the choice of course based on his skill set. So he decides to consult various people like his cousins, teachers, parents, degree students, and working people. He asks them varied questions like why he should choose, job opportunities with that course, course fee, etc. Finally, after consulting various people about the course he decides to take the course suggested by most of the people.
+
+Working of Random Forest Algorithm
+Before understanding the working of the random forest we must look into the ensemble technique. Ensemble simply means combining multiple models. Thus a collection of models is used to make predictions rather than an individual model.
+
+### Important Features of Random Forest
+1. Diversity- Not all attributes/variables/features are considered while making an individual tree, each tree is different.
+2. Immune to the curse of dimensionality- Since each tree does not consider all the features, the feature space is reduced.
+3. Parallelization-Each tree is created independently out of different data and attributes. This means that we can make full use of the CPU to build random forests.
+4.  Train-Test split- In a random forest we don’t have to segregate the data for train and test as there will always be 30% of the data which is not seen by the decision tree.
+5.  Stability- Stability arises because the result is based on majority voting/ averaging.
 
 
-## Data Cleaning
+Deep Explanation of Random forest(Good Content) : https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/
 
-Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. When combining multiple data sources, there are many opportunities for data to be duplicated or mislabeled. If data is incorrect, outcomes and algorithms are unreliable, even though they may look correct. There is no one absolute way to prescribe the exact steps in the data cleaning process because the processes will vary from dataset to dataset. But it is crucial to establish a template for your data cleaning process so you know you are doing it the right way every time.
-
-First Merging two tables(movies and credits tables) into one table on basis of movie title and Remove the unnecessary columns  Below features doesn't require because it is not necessary it does not impact too much for the recommendation so we removing the below features from the table
-
-* budget
-* homepage
-* id
-* original_language
-* original_title
-* popularity
-* production_comapny
-* production_countries
-* release-date(not sure)
-
-Accessing required and important columns are('movie_id','title','overview','genres','keywords','cast','crew')
-and  Find the NULL values we just remove the null values it has contains only 3 null values and "ast" Library performs a collection of nodes that are linked together based on the grammar of the Python language and applied the "ast" techniques to the genres and keywords columns and access the top 3 cast actor from the cast table and remaining actor was drop and create on the function to get the director name from crew column because there is a lot of workers name is there but we want just director name  and remove the whitespace from the columns(Sam Worthington, Sam Johny) sometimes user enter Sam machine get confused that's why removing whitespace  and also applied the same function for the director name, movies, caste and keywords columns and 
-Splitting each word in overview columns Adding overview, genres, keywords, cast, and crew added into one table -->"Tag" Column table because of vectorization after merging the content of all data into one column Removing the columns overview, genres, keywords, cast and crew,
-
-
-
-## Vectorization 
-### Using Bag of Words Techniques for Vectorization
-
-Text data is used in natural language processing (NLP), which interacts between humans and machines using natural language. Text data helps analyze movie reviews, products using Amazon reviews, etc. But the question that arises here is how to deal with text data when building a machine learning model?
-Text data is converted to a real-valued vector by various techniques. One such approach is Bag of Words (BoW), which will be discussed in this article. But why do we have to convert the text into a vector? Why can’t we use text data to build a machine learning model?
-Need for text vectorization
-Let’s say we have reviews of a product. Text reviews provided by the customers are of different lengths. By converting from text to numbers, we can represent a review by a finite length of the vector. In this way, the length of the vector will be equal for each review, irrespective of the text length.
-Bag of words is the most trivial representation of text into vectors. Each column of a vector represents a word. The values in each cell of a row show the number of occurrences of a word in a sentence.Vectorizing data into 5000 features and applying stop words it removes the unnecessary word from these column-like -->(Is, am, the, was, a, an)
-
-To Know more about vectorization click here : 
-
-[https://towardsdatascience.com/text-vectorization-bag-of-words-bow-441d1bfce897]
-
-
-## How Cosine Similarity works?
-
-Cosine similarity is a metric used to measure how similar the documents are irrespective of their size. Mathematically, it measures the cosine of the angle between two vectors projected in a multi-dimensional space. The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. The smaller the angle, higher the cosine similarity.
-
-![cosine](https://user-images.githubusercontent.com/71332138/134168633-f85a6481-82a4-445d-82e4-51208984ffbd.png)
-
-
-For more Details about Cosine Similarity : [https://neo4j.com/docs/graph-data-science/current/alpha-algorithms/cosine/]
 
 
 ## Streamlit Framework
@@ -100,17 +78,15 @@ Login or signup in order to create virtual app. You can either connect your gith
 
 ## Screenshots of Project
 
-![Screenshot 2021-09-20 at 1 21 49 AM](https://user-images.githubusercontent.com/71332138/134139635-1ff23997-e557-4fe2-9d65-af098e9e12bd.png)
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 13 53 PM](https://user-images.githubusercontent.com/71332138/135763968-ad9547cf-8916-448b-b20b-798240d17f20.png)
 
-![Screenshot 2021-09-20 at 1 22 03 AM](https://user-images.githubusercontent.com/71332138/134139644-3e155819-9105-4e8f-85dd-691d4342541c.png)
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 15 10 PM](https://user-images.githubusercontent.com/71332138/135763970-1697a694-7f4b-4022-b614-96196e921c01.png)
 
-![Screenshot 2021-09-20 at 1 26 40 AM](https://user-images.githubusercontent.com/71332138/134139661-1b29c50d-d7ad-46dc-8fca-3d1107c34896.png)
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------![Screenshot 2021-10-03 at 10 15 17 PM](https://user-images.githubusercontent.com/71332138/135763972-a4f11957-4a67-4001-a493-4ca563ca1f37.png)
+
 
 ## Installation and Run
 The Code is written in Python 3.9 If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
@@ -145,17 +121,3 @@ Running Project
 
 
 
-https://bank-note-app.herokuapp.com/
-
-
-
-![Screenshot 2021-10-03 at 10 13 53 PM](https://user-images.githubusercontent.com/71332138/135763968-ad9547cf-8916-448b-b20b-798240d17f20.png)
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-![Screenshot 2021-10-03 at 10 15 10 PM](https://user-images.githubusercontent.com/71332138/135763970-1697a694-7f4b-4022-b614-96196e921c01.png)
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-![Screenshot 2021-10-03 at 10 15 17 PM](https://user-images.githubusercontent.com/71332138/135763972-a4f11957-4a67-4001-a493-4ca563ca1f37.png)
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
